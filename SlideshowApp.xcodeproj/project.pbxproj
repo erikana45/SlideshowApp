@@ -12,6 +12,16 @@
 		28E521D821D31E1F00B3ACCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E521D621D31E1F00B3ACCC /* Main.storyboard */; };
 		28E521DA21D31E2000B3ACCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28E521D921D31E2000B3ACCC /* Assets.xcassets */; };
 		28E521DD21D31E2000B3ACCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E521DB21D31E2000B3ACCC /* LaunchScreen.storyboard */; };
+		28E521F221D32EAE00B3ACCC /* img10.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 28E521E821D32EAD00B3ACCC /* img10.pdf */; };
+		28E521F321D32EAE00B3ACCC /* img4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 28E521E921D32EAD00B3ACCC /* img4.pdf */; };
+		28E521F421D32EAE00B3ACCC /* img5.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 28E521EA21D32EAD00B3ACCC /* img5.pdf */; };
+		28E521F521D32EAE00B3ACCC /* img8.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 28E521EB21D32EAD00B3ACCC /* img8.pdf */; };
+		28E521F621D32EAE00B3ACCC /* img2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 28E521EC21D32EAE00B3ACCC /* img2.pdf */; };
+		28E521F721D32EAE00B3ACCC /* img9.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 28E521ED21D32EAE00B3ACCC /* img9.pdf */; };
+		28E521F821D32EAE00B3ACCC /* img7.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 28E521EE21D32EAE00B3ACCC /* img7.pdf */; };
+		28E521F921D32EAE00B3ACCC /* img6.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 28E521EF21D32EAE00B3ACCC /* img6.pdf */; };
+		28E521FA21D32EAE00B3ACCC /* img1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 28E521F021D32EAE00B3ACCC /* img1.pdf */; };
+		28E521FB21D32EAE00B3ACCC /* img3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 28E521F121D32EAE00B3ACCC /* img3.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +32,16 @@
 		28E521D921D31E2000B3ACCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28E521DC21D31E2000B3ACCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28E521DE21D31E2000B3ACCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28E521E821D32EAD00B3ACCC /* img10.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img10.pdf; sourceTree = "<group>"; };
+		28E521E921D32EAD00B3ACCC /* img4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img4.pdf; sourceTree = "<group>"; };
+		28E521EA21D32EAD00B3ACCC /* img5.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img5.pdf; sourceTree = "<group>"; };
+		28E521EB21D32EAD00B3ACCC /* img8.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img8.pdf; sourceTree = "<group>"; };
+		28E521EC21D32EAE00B3ACCC /* img2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img2.pdf; sourceTree = "<group>"; };
+		28E521ED21D32EAE00B3ACCC /* img9.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img9.pdf; sourceTree = "<group>"; };
+		28E521EE21D32EAE00B3ACCC /* img7.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img7.pdf; sourceTree = "<group>"; };
+		28E521EF21D32EAE00B3ACCC /* img6.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img6.pdf; sourceTree = "<group>"; };
+		28E521F021D32EAE00B3ACCC /* img1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img1.pdf; sourceTree = "<group>"; };
+		28E521F121D32EAE00B3ACCC /* img3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = img3.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +80,16 @@
 				28E521D921D31E2000B3ACCC /* Assets.xcassets */,
 				28E521DB21D31E2000B3ACCC /* LaunchScreen.storyboard */,
 				28E521DE21D31E2000B3ACCC /* Info.plist */,
+				28E521F021D32EAE00B3ACCC /* img1.pdf */,
+				28E521EC21D32EAE00B3ACCC /* img2.pdf */,
+				28E521F121D32EAE00B3ACCC /* img3.pdf */,
+				28E521E921D32EAD00B3ACCC /* img4.pdf */,
+				28E521EA21D32EAD00B3ACCC /* img5.pdf */,
+				28E521EF21D32EAE00B3ACCC /* img6.pdf */,
+				28E521EE21D32EAE00B3ACCC /* img7.pdf */,
+				28E521EB21D32EAD00B3ACCC /* img8.pdf */,
+				28E521ED21D32EAE00B3ACCC /* img9.pdf */,
+				28E521E821D32EAD00B3ACCC /* img10.pdf */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -124,7 +154,17 @@
 			files = (
 				28E521DD21D31E2000B3ACCC /* LaunchScreen.storyboard in Resources */,
 				28E521DA21D31E2000B3ACCC /* Assets.xcassets in Resources */,
+				28E521FA21D32EAE00B3ACCC /* img1.pdf in Resources */,
+				28E521F421D32EAE00B3ACCC /* img5.pdf in Resources */,
 				28E521D821D31E1F00B3ACCC /* Main.storyboard in Resources */,
+				28E521F821D32EAE00B3ACCC /* img7.pdf in Resources */,
+				28E521FB21D32EAE00B3ACCC /* img3.pdf in Resources */,
+				28E521F921D32EAE00B3ACCC /* img6.pdf in Resources */,
+				28E521F221D32EAE00B3ACCC /* img10.pdf in Resources */,
+				28E521F321D32EAE00B3ACCC /* img4.pdf in Resources */,
+				28E521F521D32EAE00B3ACCC /* img8.pdf in Resources */,
+				28E521F621D32EAE00B3ACCC /* img2.pdf in Resources */,
+				28E521F721D32EAE00B3ACCC /* img9.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
