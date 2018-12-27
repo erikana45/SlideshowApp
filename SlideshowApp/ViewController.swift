@@ -9,16 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    
     
     @IBOutlet weak var imageView: UIImageView!
-  
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        // 初期画像の表示
+        imageView.image = UIImage(named: "img1.pdf")
     }
+    
     
     
     //進むボタンのアクション
@@ -81,6 +81,8 @@ class ViewController: UIViewController {
     // タイマー用の時間のための変数
     var timer_sec: Float = 0
     
+
+
     /// セレクターの定義
     @objc func onTimer(_timer: Timer){
         //2.0秒ごとに
@@ -89,6 +91,8 @@ class ViewController: UIViewController {
         dispImageNo += 1
     }
 
+
+
     //再生ボタンIBAction
     @IBAction func startAction(_ sender: Any) {
         //タイマーが動いていない時に動作
@@ -96,6 +100,7 @@ class ViewController: UIViewController {
         // タイマーを設定
            self.timer = Timer.scheduledTimer(timeInterval:2.0, target: self, selector: #selector(onTimer), userInfo: nil, repeats: true)
  
+          
             
     /// 表示している画像の番号を元に画像を表示する
     func displayImage() {
@@ -121,6 +126,7 @@ class ViewController: UIViewController {
         if dispImageNo > 9 {
             dispImageNo = 0
         }
+        
         // 表示している画像の番号から名前を取り出し
         let name = imageNameArray[dispImageNo]
         // 画像を読み込み
@@ -128,7 +134,8 @@ class ViewController: UIViewController {
         // Image Viewに読み込んだ画像をセット
         imageView.image = image
     }
-   }
+   
+  }
  }
     
 

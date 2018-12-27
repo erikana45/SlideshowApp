@@ -39,12 +39,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixf-TH-rP4">
-                                <rect key="frame" x="289" y="511" width="31" height="30"/>
+                                <rect key="frame" x="285" y="512" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="再生"/>
                                 <connections>
-                                    <action selector="Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BZL-pj-Mra"/>
-                                    <action selector="startAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="26F-SK-Jg4"/>
+                                    <action selector="startAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z9h-Kf-dmG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -52,7 +51,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="button" destination="Ixf-TH-rP4" id="KUi-wx-FPM"/>
                         <outlet property="imageView" destination="sgM-zy-sgc" id="2wW-c9-2mg"/>
                     </connections>
                 </viewController>
