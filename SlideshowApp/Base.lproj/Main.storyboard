@@ -19,17 +19,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAy-LY-dHn">
-                                <rect key="frame" x="69" y="507" width="31" height="30"/>
+                                <rect key="frame" x="67" y="512" width="33" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="進む"/>
                                 <connections>
-                                    <action selector="tapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="deI-W3-4G3"/>
+                                    <action selector="onAdv:" destination="BYZ-38-t0r" eventType="touchUpInside" id="17e-46-MPp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T6B-7X-d0r">
                                 <rect key="frame" x="178" y="511" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="onPrev:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dMX-Yq-8gc"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sgM-zy-sgc">
                                 <rect key="frame" x="67" y="151" width="240" height="128"/>
@@ -39,17 +42,23 @@
                                 <rect key="frame" x="289" y="511" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="再生"/>
+                                <connections>
+                                    <action selector="Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BZL-pj-Mra"/>
+                                    <action selector="startAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="26F-SK-Jg4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="button" destination="Ixf-TH-rP4" id="KUi-wx-FPM"/>
                         <outlet property="imageView" destination="sgM-zy-sgc" id="2wW-c9-2mg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="56.799999999999997" y="67.916041979010501"/>
         </scene>
     </scenes>
 </document>

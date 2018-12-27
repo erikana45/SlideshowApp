@@ -10,46 +10,126 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    
     @IBOutlet weak var imageView: UIImageView!
-    var image1: UIImage!
-    var image2: UIImage!
-    var image3: UIImage!
-    var image4: UIImage!
-    var image5: UIImage!
-    var image6: UIImage!
-    var image7: UIImage!
-    var image8: UIImage!
-    var image9: UIImage!
-    var image10: UIImage!
+  
     
-    var flg = false
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    
-        // バンドルした画像ファイルを読み込み
-        image1 = UIImage(named:"img1.pdf")
-        image2 = UIImage(named:"img2.pdf")
-        image3 = UIImage(named:"img3.pdf")
-        image4 = UIImage(named:"img4.pdf")
-        image5 = UIImage(named:"img5.pdf")
-        image6 = UIImage(named:"img6.pdf")
-        image7 = UIImage(named:"img7.pdf")
-        image8 = UIImage(named:"img8.pdf")
-        image9 = UIImage(named:"img9.pdf")
-        image10 = UIImage(named:"img10.pdf")
-        
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
-    @IBAction func tapped(_ sender: Any) {
-        if flg {
-            imageView.image = image1
-            flg = false
-        }
-        else{
-            imageView.image = image2
-            flg = true
-        }}
     
-}
+    
+    //進むボタンのアクション
+    @IBAction func onAdv(_ sender: Any) {
+    // 表示している画像の番号を1増やす
+        dispImageNo += 1
+        // 表示している画像の番号を元に画像を表示する
+        displayImage()
+    }
+    
+    //戻るボタンのアクション
+    @IBAction func onPrev(_ sender: Any) {
+        // 表示している画像の番号を1減らす
+        dispImageNo -= 1
+        // 表示している画像の番号を元に画像を表示する
+        displayImage()
+    }
+    
+    /// 表示している画像の番号
+    var dispImageNo = 0
+    
+    /// 表示している画像の番号を元に画像を表示する
+    func displayImage() {
+        
+    // 画像の名前の配列
+    let imageNameArray = ["img1.pdf",
+            "img2.pdf",
+            "img3.pdf",
+            "img4.pdf",
+            "img5.pdf",
+            "img6.pdf",
+            "img7.pdf",
+            "img8.pdf",
+            "img9.pdf",
+            "img10.pdf"
+            ]
+        
+        // 範囲より下を指している場合、最後の画像を表示
+        if dispImageNo < 0 {
+            dispImageNo = 9
+        }
+        
+        // 範囲より上を指している場合、最初の画像を表示
+        if dispImageNo > 9 {
+            dispImageNo = 0
+        }
+        // 表示している画像の番号から名前を取り出し
+        let name = imageNameArray[dispImageNo]
+        // 画像を読み込み
+        let image = UIImage(named: name)
+        // Image Viewに読み込んだ画像をセット
+        imageView.image = image
+    }
+    
+ 
+    
+    
+    /// 一定の間隔で処理を行うためのタイマー
+    var timer: Timer?
+    // タイマー用の時間のための変数
+    var timer_sec: Float = 0
+    
+    /// セレクターの定義
+    @objc func onTimer(_timer: Timer){
+        //2.0秒ごとに
+        self.timer_sec += 2.0
+        // 表示している画像の番号を1増やす
+        dispImageNo += 1
+    }
 
+    //再生ボタンIBAction
+    @IBAction func startAction(_ sender: Any) {
+        //タイマーが動いていない時に動作
+        if self.timer == nil{
+        // タイマーを設定
+           self.timer = Timer.scheduledTimer(timeInterval:2.0, target: self, selector: #selector(onTimer), userInfo: nil, repeats: true)
+ 
+            
+    /// 表示している画像の番号を元に画像を表示する
+    func displayImage() {
+        // 画像の名前の配列
+        let imageNameArray = ["img1.pdf",
+                              "img2.pdf",
+                              "img3.pdf",
+                              "img4.pdf",
+                              "img5.pdf",
+                              "img6.pdf",
+                              "img7.pdf",
+                              "img8.pdf",
+                              "img9.pdf",
+                              "img10.pdf"
+        ]
+        
+        // 範囲より下を指している場合、最後の画像を表示
+        if dispImageNo < 0 {
+            dispImageNo = 9
+        }
+        
+        // 範囲より上を指している場合、最初の画像を表示
+        if dispImageNo > 9 {
+            dispImageNo = 0
+        }
+        // 表示している画像の番号から名前を取り出し
+        let name = imageNameArray[dispImageNo]
+        // 画像を読み込み
+        let image = UIImage(named: name)
+        // Image Viewに読み込んだ画像をセット
+        imageView.image = image
+    }
+   }
+ }
+    
+
+}
