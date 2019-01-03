@@ -43,7 +43,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="再生"/>
                                 <connections>
-                                    <action selector="startAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z9h-Kf-dmG"/>
+                                    <action selector="startstop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FBT-rQ-M1Y"/>
                                 </connections>
                             </button>
                         </subviews>
