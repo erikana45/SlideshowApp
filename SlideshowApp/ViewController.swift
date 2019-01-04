@@ -19,24 +19,7 @@ class ViewController: UIViewController {
         // 初期画像の表示
         imageView.image = UIImage(named: "img1.pdf")
     }
-    
-    
-    //進むボタンのアクション
-    @IBAction func onAdv(_ sender: Any) {
-    // 表示している画像の番号を1増やす
-        dispImageNo += 1
-        // 表示している画像の番号を元に画像を表示する
-        displayImage()
-    }
-    
-    //戻るボタンのアクション
-    @IBAction func onPrev(_ sender: Any) {
-        // 表示している画像の番号を1減らす
-        dispImageNo -= 1
-        // 表示している画像の番号を元に画像を表示する
-        displayImage()
-    }
-    
+   
     
     /// 一定の間隔で処理を行うためのタイマー
     var timer: Timer?
@@ -54,7 +37,29 @@ class ViewController: UIViewController {
     
     
     
-    //再生・停止ボタン
+    //進むボタンのアクション
+    @IBAction func onAdv(_ sender: Any) {
+        //タイマーが動いていない時に
+        if self.timer == nil{
+        // 表示している画像の番号を1増やす
+        dispImageNo += 1
+        // 表示している画像の番号を元に画像を表示する
+        displayImage()
+      }
+     }
+    
+    //戻るボタンのアクション
+    @IBAction func onPrev(_ sender: Any) {
+        //タイマーが動いていない時に
+        if self.timer == nil{
+        // 表示している画像の番号を1減らす
+        dispImageNo -= 1
+        // 表示している画像の番号を元に画像を表示する
+        displayImage()
+      }
+    }
+    
+    //再生・停止ボタンのアクション
     @IBOutlet weak var startstopButton: UIButton!
     @IBAction func startstop(_ sender: Any) {
         //タイマーが動いていない時に動作
