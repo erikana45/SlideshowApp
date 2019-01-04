@@ -21,6 +21,12 @@ class ViewController: UIViewController {
     }
    
     
+    @IBAction func onTapImage(_ sender: Any) {
+        // セグエを使用して画面を遷移
+       performSegue(withIdentifier:"result", sender: nil)
+    }
+    
+    
     /// 一定の間隔で処理を行うためのタイマー
     var timer: Timer?
     // タイマー用の時間のための変数
@@ -118,4 +124,7 @@ class ViewController: UIViewController {
     }
   
 }
+
+
+
 
