@@ -53,14 +53,27 @@ class ViewController: UIViewController {
     }
     
     
-    //再生・停止ボタンIBAction
+    
+    //再生・停止ボタン
+    @IBOutlet weak var startstopButton: UIButton!
     @IBAction func startstop(_ sender: Any) {
         //タイマーが動いていない時に動作
         if self.timer == nil{
             // タイマーを設定
             self.timer = Timer.scheduledTimer(timeInterval:2.0, target: self, selector: #selector(onTimer), userInfo: nil, repeats: true)
+            //ボタン表示を「停止」に切り替え
+            startstopButton.setTitle("停止",for: .normal)
+        }else{
+           //タイマーを停止する
+            self.timer!.invalidate()
+            self.timer = nil
+          //ボタン表示を「再生」に切り替え
+            startstopButton.setTitle("再生",for: .normal)
         }
     }
+    
+   
+    
     
     
     /// 表示している画像の番号
