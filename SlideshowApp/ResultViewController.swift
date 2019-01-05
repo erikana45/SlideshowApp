@@ -8,25 +8,22 @@
 
 import UIKit
 
+
 class ResultViewController: UIViewController {
-
     
     
-    @IBOutlet weak var scaleimageView: UIImageView!
-    var transScale = CGAffineTransform()
-    
-    // 画面の横幅を取得
-    var screenWidth:CGFloat!
-    var screenHeight:CGFloat!
-
+    @IBOutlet weak var resultimageView: UIImageView!
+    var scaleimage : UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //画像を受け取る
+        resultimageView.image = scaleimage
         //画像を拡大
-        transScale = CGAffineTransform(scaleX: 2, y: 2)
-        scaleimageView.transform = transScale
+        resultimageView.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
         
         // Do any additional setup after loading the view.
+    
     }
     
 

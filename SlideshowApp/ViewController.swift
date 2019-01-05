@@ -12,27 +12,26 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     
-    
-    
     override func viewDidLoad() {
-        super.didReceiveMemoryWarning()
+        super.viewDidLoad()
         // Dispose of any resources that can be recreated.
         // 初期画像の表示
         imageView.image = UIImage(named: "img1.pdf")
-        
     }
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // segueから遷移先のResultViewControllerを取得する
         let resultViewController:ResultViewController = segue.destination as! ResultViewController
-        // 遷移先のResultViewControllerで宣言しているscaleimageViewにimageViewを渡す
-        resultViewController.scaleimageView = imageView
+        // 遷移先のResultViewControllerで宣言しているscaleimageにimageViewを渡す
+        resultViewController.scaleimage = imageView.image
     }
-    
     
     @IBAction func onTapImage(_ sender: Any) {
         // セグエを使用して画面を遷移
        performSegue(withIdentifier:"result", sender: nil)
+    }
+    
+    @IBAction func unwind(_ segue: UIStoryboardSegue) {
     }
     
     
