@@ -13,6 +13,16 @@
 		28E521D821D31E1F00B3ACCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E521D621D31E1F00B3ACCC /* Main.storyboard */; };
 		28E521DA21D31E2000B3ACCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28E521D921D31E2000B3ACCC /* Assets.xcassets */; };
 		28E521DD21D31E2000B3ACCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28E521DB21D31E2000B3ACCC /* LaunchScreen.storyboard */; };
+		28E86ABF21EF08CC00D66A10 /* img6.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 28E86AB521EF08CC00D66A10 /* img6.pdf */; };
+		28E86AC021EF08CC00D66A10 /* img8.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 28E86AB621EF08CC00D66A10 /* img8.pdf */; };
+		28E86AC121EF08CC00D66A10 /* img7.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 28E86AB721EF08CC00D66A10 /* img7.pdf */; };
+		28E86AC221EF08CC00D66A10 /* img9.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 28E86AB821EF08CC00D66A10 /* img9.pdf */; };
+		28E86AC321EF08CC00D66A10 /* img4.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 28E86AB921EF08CC00D66A10 /* img4.pdf */; };
+		28E86AC421EF08CC00D66A10 /* img10.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 28E86ABA21EF08CC00D66A10 /* img10.pdf */; };
+		28E86AC521EF08CC00D66A10 /* img2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 28E86ABB21EF08CC00D66A10 /* img2.pdf */; };
+		28E86AC621EF08CC00D66A10 /* img1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 28E86ABC21EF08CC00D66A10 /* img1.pdf */; };
+		28E86AC721EF08CC00D66A10 /* img3.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 28E86ABD21EF08CC00D66A10 /* img3.pdf */; };
+		28E86AC821EF08CC00D66A10 /* img5.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 28E86ABE21EF08CC00D66A10 /* img5.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		28E521D921D31E2000B3ACCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28E521DC21D31E2000B3ACCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28E521DE21D31E2000B3ACCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28E86AB521EF08CC00D66A10 /* img6.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = img6.pdf; path = ../../../Downloads/img6.pdf; sourceTree = "<group>"; };
+		28E86AB621EF08CC00D66A10 /* img8.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = img8.pdf; path = ../../../Downloads/img8.pdf; sourceTree = "<group>"; };
+		28E86AB721EF08CC00D66A10 /* img7.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = img7.pdf; path = ../../../Downloads/img7.pdf; sourceTree = "<group>"; };
+		28E86AB821EF08CC00D66A10 /* img9.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = img9.pdf; path = ../../../Downloads/img9.pdf; sourceTree = "<group>"; };
+		28E86AB921EF08CC00D66A10 /* img4.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = img4.pdf; path = ../../../Downloads/img4.pdf; sourceTree = "<group>"; };
+		28E86ABA21EF08CC00D66A10 /* img10.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = img10.pdf; path = ../../../Downloads/img10.pdf; sourceTree = "<group>"; };
+		28E86ABB21EF08CC00D66A10 /* img2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = img2.pdf; path = ../../../Downloads/img2.pdf; sourceTree = "<group>"; };
+		28E86ABC21EF08CC00D66A10 /* img1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = img1.pdf; path = ../../../Downloads/img1.pdf; sourceTree = "<group>"; };
+		28E86ABD21EF08CC00D66A10 /* img3.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = img3.pdf; path = ../../../Downloads/img3.pdf; sourceTree = "<group>"; };
+		28E86ABE21EF08CC00D66A10 /* img5.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = img5.pdf; path = ../../../Downloads/img5.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,16 @@
 		28E521D121D31E1F00B3ACCC /* SlideshowApp */ = {
 			isa = PBXGroup;
 			children = (
+				28E86ABC21EF08CC00D66A10 /* img1.pdf */,
+				28E86ABB21EF08CC00D66A10 /* img2.pdf */,
+				28E86ABD21EF08CC00D66A10 /* img3.pdf */,
+				28E86AB921EF08CC00D66A10 /* img4.pdf */,
+				28E86ABE21EF08CC00D66A10 /* img5.pdf */,
+				28E86AB521EF08CC00D66A10 /* img6.pdf */,
+				28E86AB721EF08CC00D66A10 /* img7.pdf */,
+				28E86AB621EF08CC00D66A10 /* img8.pdf */,
+				28E86AB821EF08CC00D66A10 /* img9.pdf */,
+				28E86ABA21EF08CC00D66A10 /* img10.pdf */,
 				28E521D221D31E1F00B3ACCC /* AppDelegate.swift */,
 				28E521D421D31E1F00B3ACCC /* ViewController.swift */,
 				28E521D621D31E1F00B3ACCC /* Main.storyboard */,
@@ -126,8 +156,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				28E521DD21D31E2000B3ACCC /* LaunchScreen.storyboard in Resources */,
+				28E86AC321EF08CC00D66A10 /* img4.pdf in Resources */,
 				28E521DA21D31E2000B3ACCC /* Assets.xcassets in Resources */,
+				28E86AC821EF08CC00D66A10 /* img5.pdf in Resources */,
+				28E86AC621EF08CC00D66A10 /* img1.pdf in Resources */,
+				28E86AC121EF08CC00D66A10 /* img7.pdf in Resources */,
+				28E86AC221EF08CC00D66A10 /* img9.pdf in Resources */,
 				28E521D821D31E1F00B3ACCC /* Main.storyboard in Resources */,
+				28E86ABF21EF08CC00D66A10 /* img6.pdf in Resources */,
+				28E86AC721EF08CC00D66A10 /* img3.pdf in Resources */,
+				28E86AC021EF08CC00D66A10 /* img8.pdf in Resources */,
+				28E86AC421EF08CC00D66A10 /* img10.pdf in Resources */,
+				28E86AC521EF08CC00D66A10 /* img2.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
