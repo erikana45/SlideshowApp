@@ -68,9 +68,6 @@ class ViewController: UIViewController {
             dispImageNo += 1
             // 表示している画像の番号を元に画像を表示する
             displayImage()
-        }else{
-            //タイマーが動いている時には、ボタンを無効にする
-            onAdvButton.isEnabled = false
         }
      }
     
@@ -85,9 +82,6 @@ class ViewController: UIViewController {
             dispImageNo -= 1
             // 表示している画像の番号を元に画像を表示する
             displayImage()
-        }else{
-            //タイマーが動いている時には、ボタンを無効にする
-            onPrevButton.isEnabled = false
         }
     }
     
@@ -100,12 +94,21 @@ class ViewController: UIViewController {
             self.timer = Timer.scheduledTimer(timeInterval:2.0, target: self, selector: #selector(onTimer), userInfo: nil, repeats: true)
             //ボタン表示を「停止」に切り替え
             startstopButton.setTitle("停止", for: .normal)
+            //タイマーが動いている時には、ボタンを無効にする
+            onAdvButton.isEnabled = false
+            //タイマーが動いている時には、ボタンを無効にする
+            onPrevButton.isEnabled = false
         }else{
            //タイマーを停止する
             self.timer!.invalidate()
             self.timer = nil
           //ボタン表示を「再生」に切り替え
             startstopButton.setTitle("再生", for: .normal)
+            //タイマーが動いている時には、ボタンを無効にする
+            onAdvButton.isEnabled = true
+            //タイマーが動いている時には、ボタンを無効にする
+            onPrevButton.isEnabled = true
+            
         }
     }
     
