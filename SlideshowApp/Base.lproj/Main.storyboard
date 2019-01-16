@@ -69,6 +69,8 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="sgM-zy-sgc" id="2wW-c9-2mg"/>
+                        <outlet property="onAdvButton" destination="iAy-LY-dHn" id="bum-8G-ki1"/>
+                        <outlet property="onPrevButton" destination="T6B-7X-d0r" id="4l2-0f-8b9"/>
                         <outlet property="startstopButton" destination="Ixf-TH-rP4" id="j0B-lf-3uQ"/>
                         <segue destination="Cpz-L1-107" kind="show" identifier="result" id="huF-5J-blC"/>
                     </connections>

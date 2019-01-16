@@ -25,15 +25,7 @@ class ViewController: UIViewController {
         // 遷移先のResultViewControllerで宣言しているscaleimageにimageViewを渡す
         resultViewController.scaleimage = imageView.image
     }
-    
-    @IBAction func onTapImage(_ sender: Any) {
-        // セグエを使用して画面を遷移
-       performSegue(withIdentifier:"result", sender: nil)
-    }
-    
-    @IBAction func unwind(_ segue: UIStoryboardSegue) {
-    }
-    
+ 
     
     /// 一定の間隔で処理を行うためのタイマー
     var timer: Timer?
@@ -51,26 +43,52 @@ class ViewController: UIViewController {
     
     
     
+    
+    @IBAction func onTapImage(_ sender: Any) {
+        // セグエを使用して画面を遷移
+       performSegue(withIdentifier:"result", sender: nil)
+        //タイマーをストップ
+        self.timer!.invalidate()
+        self.timer = nil
+    }
+    
+    
+    
+    @IBAction func unwind(_ segue: UIStoryboardSegue) {
+    }
+    
+ 
+    
+    @IBOutlet weak var onAdvButton: UIButton!
     //進むボタンのアクション
     @IBAction func onAdv(_ sender: Any) {
         //タイマーが動いていない時に
         if self.timer == nil{
-        // 表示している画像の番号を1増やす
-        dispImageNo += 1
-        // 表示している画像の番号を元に画像を表示する
-        displayImage()
-      }
+            // 表示している画像の番号を1増やす
+            dispImageNo += 1
+            // 表示している画像の番号を元に画像を表示する
+            displayImage()
+        }else{
+            //タイマーが動いている時には、ボタンを無効にする
+            onAdvButton.isEnabled = false
+        }
      }
     
+    
+    
+    @IBOutlet weak var onPrevButton: UIButton!
     //戻るボタンのアクション
     @IBAction func onPrev(_ sender: Any) {
         //タイマーが動いていない時に
         if self.timer == nil{
-        // 表示している画像の番号を1減らす
-        dispImageNo -= 1
-        // 表示している画像の番号を元に画像を表示する
-        displayImage()
-      }
+            // 表示している画像の番号を1減らす
+            dispImageNo -= 1
+            // 表示している画像の番号を元に画像を表示する
+            displayImage()
+        }else{
+            //タイマーが動いている時には、ボタンを無効にする
+            onPrevButton.isEnabled = false
+        }
     }
     
     //再生・停止ボタンのアクション
