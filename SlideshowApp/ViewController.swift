@@ -47,15 +47,18 @@ class ViewController: UIViewController {
     @IBAction func onTapImage(_ sender: Any) {
         // セグエを使用して画面を遷移
        performSegue(withIdentifier:"result", sender: nil)
-        //タイマーをストップ
-        self.timer!.invalidate()
-        self.timer = nil
-        //ボタン表示を「再生」に切り替え
-        startstopButton.setTitle("再生", for: .normal)
-        //タイマーが動いていない時には、ボタンを有効にする
-        onAdvButton.isEnabled = true
-        //タイマーが動いてない時には、ボタンを有効にする
-        onPrevButton.isEnabled = true
+        //タイマーが動いている時は
+        if self.timer != nil {
+            //タイマーをストップ
+            self.timer?.invalidate()
+            self.timer = nil
+            //ボタン表示を「再生」に切り替え
+            startstopButton.setTitle("再生", for: .normal)
+            //タイマーが動いていない時には、ボタンを有効にする
+            onAdvButton.isEnabled = true
+            //タイマーが動いてない時には、ボタンを有効にする
+            onPrevButton.isEnabled = true
+        }
     }
     
     
@@ -160,7 +163,4 @@ class ViewController: UIViewController {
 
     
 }
-
-
-
 
