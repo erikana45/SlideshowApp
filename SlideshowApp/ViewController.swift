@@ -50,6 +50,12 @@ class ViewController: UIViewController {
         //タイマーをストップ
         self.timer!.invalidate()
         self.timer = nil
+        //ボタン表示を「再生」に切り替え
+        startstopButton.setTitle("再生", for: .normal)
+        //タイマーが動いていない時には、ボタンを有効にする
+        onAdvButton.isEnabled = true
+        //タイマーが動いてない時には、ボタンを有効にする
+        onPrevButton.isEnabled = true
     }
     
     
@@ -104,9 +110,9 @@ class ViewController: UIViewController {
             self.timer = nil
           //ボタン表示を「再生」に切り替え
             startstopButton.setTitle("再生", for: .normal)
-            //タイマーが動いている時には、ボタンを無効にする
+            //タイマーが動いていない時には、ボタンを有効にする
             onAdvButton.isEnabled = true
-            //タイマーが動いている時には、ボタンを無効にする
+            //タイマーが動いていない時には、ボタンを有効にする
             onPrevButton.isEnabled = true
             
         }
