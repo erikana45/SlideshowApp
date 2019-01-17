@@ -132,16 +132,16 @@ class ViewController: UIViewController {
     func displayImage() {
         
     // 画像の名前の配列
-    let imageNameArray = ["img1.pdf",
-            "img2.pdf",
-            "img3.pdf",
-            "img4.pdf",
-            "img5.pdf",
-            "img6.pdf",
-            "img7.pdf",
-            "img8.pdf",
-            "img9.pdf",
-            "img10.pdf"
+    let imageNameArray = ["img1",
+            "img2",
+            "img3",
+            "img4",
+            "img5",
+            "img6",
+            "img7",
+            "img8",
+            "img9",
+            "img10"
             ]
         
         // 範囲より下を指している場合、最後の画像を表示
